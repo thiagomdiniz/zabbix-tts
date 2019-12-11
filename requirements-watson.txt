@@ -1,0 +1,4 @@
+flask
+flask_restful
+playsound
+ibm-watson>=4.1.0
