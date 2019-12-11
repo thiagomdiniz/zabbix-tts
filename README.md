@@ -2,7 +2,7 @@
 
 HTTP Flask endpoint that receives requests containing text and transforms it into audio to speak the text.
 
-This allows Zabbix to send alert/trigger text to this endpoint and a TV can speak the received text.
+This allows Zabbix to send alert/trigger text to this endpoint and a TV(Raspberry pi) can speak the received text.
 
 ## Usage
 
@@ -19,6 +19,8 @@ There are two Python3 scripts:
    [https://cloud.ibm.com/catalog/services/text-to-speech](https://cloud.ibm.com/catalog/services/text-to-speech)
 
 In both scripts you must edit the credentials for HTTP Basic Auth (variables "user" and "passwd").
+
+In both scripts you can change the "endpoint_timeout" variable to increase or decrease the timeout in seconds to try to access the voice API over the internet. In this case a standard audio will be played.
 
 Install Python requirements:
 
@@ -38,18 +40,16 @@ Run the script:
 # for gTTS
 python3 tts-google.py
 
-# for Watson
-python3 tts-watson.py
-```
-
 or
 
-```
-# for gTTS
 chmod +x tts-google.py
 ./tts-google.py
 
 # for Watson
+python3 tts-watson.py
+
+or
+
 chmod +x tts-watson.py
 ./tts-watson.py
 ```
