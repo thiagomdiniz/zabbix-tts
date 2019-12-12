@@ -74,7 +74,7 @@ curl -u "user:pass" http://127.0.0.1:5000/pt-br/testando%20o%20script
 
 The "text2speech.sh" script will be used by Zabbix as media type to apply URL encoding to the triggers text and make the HTTP request to the Python script endpoint.
 
-See an example configuration at [medium.com](medium.com).
+See an example configuration at [medium.com/@thiagomdiniz](https://medium.com/@thiagomdiniz/se-meu-zabbix-falasse-cd4388c90c0e?sk=08adc79742dc449bd62bf8ac7b92e23d).
 
 ### gTTS (Google Text-to-Speech) docs:
 
