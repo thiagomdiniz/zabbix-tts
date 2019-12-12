@@ -73,6 +73,7 @@ curl -u "user:pass" http://127.0.0.1:5000/pt-br/testando%20o%20script
 ## Zabbix configuration
 
 The "text2speech.sh" script will be used by Zabbix as media type to apply URL encoding to the triggers text and make the HTTP request to the Python script endpoint.
+Change the "user" and "pass" variables according to the HTTP Basic Auth credentials set in the Python script.
 
 See an example configuration at [medium.com/@thiagomdiniz](https://medium.com/@thiagomdiniz/se-meu-zabbix-falasse-cd4388c90c0e?sk=08adc79742dc449bd62bf8ac7b92e23d).
 
